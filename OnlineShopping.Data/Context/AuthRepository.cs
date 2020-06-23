@@ -1,39 +1,53 @@
-﻿using OnlineShoppingDB.Server.Models;
+﻿using OnlineShopping.Common.Models;
 using System;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.Providers.Entities;
 
 namespace OnlineShopping.Data.Context
 {
     public class AuthRepository : IAuthRepository
 
     {
-        private readonly AppContext _context;
+        private readonly OnlineShoppingContext _context;
 
-        public AuthRepository(AppContext context)
+        public AuthRepository(OnlineShoppingContext context)
         {
             _context = context;
         }
-        public async Task<Login> Customer(Login login, string password)
+        public async Task<User> Customer(User user, string password)
         {
-            var login = await _context.Logins.FristOrDefaultAsync(x => x.UserName == username);
-            if (User == null)
-            {
-                return null;
-            }
+            await _context.Users.AddAsync(user);
+            await _context.SaveChangesAsync();
+
+            return user;
             
         }
 
-        public Task<Login> Login(string username, string password)
+        public async Task<User> Login(string username, string password)
         {
-            throw new NotImplementedException();
+            var user = await _context.Users.FristOrDefaultAsync(x => x.UserName == username);
+            if (user == null)
+            {
+                return null;
+            }
         }
 
-        public Task<bool> UserExists(string username)
+        public async Task<bool> UserExists(string username)
         {
-            throw new NotImplementedException();
+            if (await _context.Users.AnyAsync(x => x.Username == username))
+            return true;
+
+            return false;
         }
+    }
+}
+
+namespace OnlineShopping.Data
+{
+    class OnlineShoppingContext
+    {
     }
 }

@@ -5,7 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\OnlineShoppingDB\OnlineShoppingDB.Server.csproj" />
+    <PackageReference Include="Microsoft.AspNet.Providers.Core" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OnlineShopping.Common\OnlineShopping.Common.csproj" />
   </ItemGroup>
 
 </Project>

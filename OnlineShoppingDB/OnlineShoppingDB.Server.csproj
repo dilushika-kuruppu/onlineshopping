@@ -32,6 +32,12 @@
     <Folder Include="Models\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\OnlineShopping.Common\OnlineShopping.Common.csproj" />
+    <ProjectReference Include="..\OnlineShopping.Data\OnlineShopping.Data.csproj" />
+    <ProjectReference Include="..\OnlineShoppingBusiness\OnlineShopping.Business.csproj" />
+  </ItemGroup>
+
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
     <!-- Ensure Node.js is installed -->
     <Exec Command="node --version" ContinueOnError="true">

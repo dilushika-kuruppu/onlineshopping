@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Web.Providers.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using OnlineShopping.Data.Context;
 using OnlineShoppingDB.Server.Dtos;
 using OnlineShoppingDB.Server.Models;
 
@@ -30,21 +32,22 @@ namespace OnlineShoppingDB.Server.Controllers
 
             return BadRequest("UserName Already Exists");
 
-            var loginToCreate = new Login
+            var userToCreate = new User
             {
-                Username = userForCustomerDto.Username
+                UserName = userForCustomerDto.Username
             };
 
-            var createdLogin = await _repo.Customer(loginToCreate, userForCustomerDto.Password);
+            var createdUser = await _repo.Customer(userToCreate, userForCustomerDto.Password);
 
             return StatusCode(201);
 
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login(UserForLoginDto userForLoginDto) {
+        public async Task<IActionResult> Login(UserForLoginDto userForLoginDto)
+        {
 
-            var userFormRepo = await _repo.Login(UserForLoginDto.Username, UserForLoginDto.Password);
+            var userFormRepo = await _repo.Login(userForLoginDto.Username, userForLoginDto.Password);
 
             if (userFormRepo == null)
                 return Unauthorized();
