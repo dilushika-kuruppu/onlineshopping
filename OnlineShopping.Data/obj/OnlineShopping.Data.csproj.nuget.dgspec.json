@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\OnlineShoppingDB\\OnlineShopping.Data\\OnlineShopping.Data.csproj": {}
+    "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Data\\OnlineShopping.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\OnlineShoppingDB\\OnlineShopping.Common\\OnlineShopping.Common.csproj": {
+    "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\OnlineShoppingDB\\OnlineShopping.Common\\OnlineShopping.Common.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj",
         "projectName": "OnlineShopping.Common",
-        "projectPath": "C:\\Users\\User\\source\\repos\\OnlineShoppingDB\\OnlineShopping.Common\\OnlineShopping.Common.csproj",
+        "projectPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\OnlineShoppingDB\\OnlineShopping.Common\\obj\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -59,14 +59,14 @@
         }
       }
     },
-    "C:\\Users\\User\\source\\repos\\OnlineShoppingDB\\OnlineShopping.Data\\OnlineShopping.Data.csproj": {
+    "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Data\\OnlineShopping.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\OnlineShoppingDB\\OnlineShopping.Data\\OnlineShopping.Data.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Data\\OnlineShopping.Data.csproj",
         "projectName": "OnlineShopping.Data",
-        "projectPath": "C:\\Users\\User\\source\\repos\\OnlineShoppingDB\\OnlineShopping.Data\\OnlineShopping.Data.csproj",
+        "projectPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Data\\OnlineShopping.Data.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\OnlineShoppingDB\\OnlineShopping.Data\\obj\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -85,8 +85,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\User\\source\\repos\\OnlineShoppingDB\\OnlineShopping.Common\\OnlineShopping.Common.csproj": {
-                "projectPath": "C:\\Users\\User\\source\\repos\\OnlineShoppingDB\\OnlineShopping.Common\\OnlineShopping.Common.csproj"
+              "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj": {
+                "projectPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj"
               }
             }
           }
@@ -100,9 +100,25 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "Microsoft.AspNet.Providers.Core": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[2.0.0, )"
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.5, )"
             }
           },
           "imports": [

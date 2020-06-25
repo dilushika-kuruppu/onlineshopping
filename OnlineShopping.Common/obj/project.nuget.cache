@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vWrdRJ2Q9uc1NsABaV5IsQFcY9XmVzjXPJ0vjutnlFvWsN2IpLOmrXd7uYFGSrou4ZNlUJSOfi8cDf/e9sKsYw==",
+  "dgSpecHash": "2gz1X2BcfNUWu8XsBxyYD1zKYB2Zigu+fOpmy1i6k8rgyS8FWc4FqADe1hISxFtiM42EysfrMDkkoex+8m8tYA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\source\\repos\\OnlineShoppingDB\\OnlineShopping.Common\\OnlineShopping.Common.csproj",
+  "projectFilePath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\OnlineShoppingDB\\OnlineShoppingBusiness\\OnlineShopping.Business.csproj",
+      "projectUniqueName": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShoppingBusiness\\OnlineShopping.Business.csproj",
       "projectName": "OnlineShopping.Business",
-      "projectPath": "C:\\Users\\User\\source\\repos\\OnlineShoppingDB\\OnlineShoppingBusiness\\OnlineShopping.Business.csproj",
+      "projectPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShoppingBusiness\\OnlineShopping.Business.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\OnlineShoppingDB\\OnlineShoppingBusiness\\obj\\",
+      "outputPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShoppingBusiness\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

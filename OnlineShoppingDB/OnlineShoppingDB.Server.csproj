@@ -29,10 +29,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\OnlineShopping.Common\OnlineShopping.Common.csproj" />
     <ProjectReference Include="..\OnlineShopping.Data\OnlineShopping.Data.csproj" />
     <ProjectReference Include="..\OnlineShoppingBusiness\OnlineShopping.Business.csproj" />

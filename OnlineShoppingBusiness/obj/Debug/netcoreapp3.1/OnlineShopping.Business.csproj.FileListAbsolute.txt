@@ -7,3 +7,12 @@ C:\Users\User\source\repos\OnlineShoppingDB\OnlineShoppingBusiness\obj\Debug\net
 C:\Users\User\source\repos\OnlineShoppingDB\OnlineShoppingBusiness\obj\Debug\netcoreapp3.1\OnlineShopping.Business.dll
 C:\Users\User\source\repos\OnlineShoppingDB\OnlineShoppingBusiness\obj\Debug\netcoreapp3.1\OnlineShopping.Business.pdb
 C:\Users\User\source\repos\OnlineShoppingDB\OnlineShoppingBusiness\obj\Debug\netcoreapp3.1\OnlineShopping.Business.csprojAssemblyReference.cache
+C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShoppingBusiness\bin\Debug\netcoreapp3.1\OnlineShopping.Business.deps.json
+C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShoppingBusiness\bin\Debug\netcoreapp3.1\OnlineShopping.Business.dll
+C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShoppingBusiness\bin\Debug\netcoreapp3.1\OnlineShopping.Business.pdb
+C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShoppingBusiness\obj\Debug\netcoreapp3.1\OnlineShopping.Business.csprojAssemblyReference.cache
+C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShoppingBusiness\obj\Debug\netcoreapp3.1\OnlineShopping.Business.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShoppingBusiness\obj\Debug\netcoreapp3.1\OnlineShopping.Business.AssemblyInfo.cs
+C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShoppingBusiness\obj\Debug\netcoreapp3.1\OnlineShopping.Business.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShoppingBusiness\obj\Debug\netcoreapp3.1\OnlineShopping.Business.dll
+C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShoppingBusiness\obj\Debug\netcoreapp3.1\OnlineShopping.Business.pdb
