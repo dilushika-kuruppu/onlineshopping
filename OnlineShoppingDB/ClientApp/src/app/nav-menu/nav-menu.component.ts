@@ -9,13 +9,14 @@ import { error } from '@angular/compiler/src/util';
 })
 export class NavMenuComponent implements OnInit {
   isExpanded = false;
-  model: any = {};
+ 
 
-  constructor(private authService: AuthService) {
+  constructor() {
   }
 
   ngOnInit() {
   }
+
   collapse() {
     this.isExpanded = false;
   }
@@ -23,21 +24,5 @@ export class NavMenuComponent implements OnInit {
   toggle() {
     this.isExpanded = !this.isExpanded;
   }
-  login() {
-    this.authService.login(this.model).subscribe(next => {
-      console.log("Logging Successfully");
-    }, error => {
-      console.log("Failed to Logging");
-    });
-  }
-
-  loggedIn() {
-    const token = localStorage.getItem('token');
-    return !!token;
-  }
-
-  logout() {
-    localStorage.removeItem('token');
-    console.log("Logged Out");
-  }
+  
 }
