@@ -10,7 +10,7 @@ namespace OnlineShoppingDB.Server.Dtos
     {
       
         [Required]
-        public string Username { get; set; }
+        public string UserName { get; set; }
 
         [Required]
         [StringLength(8, MinimumLength = 4, ErrorMessage = "You Must specify Password Between 4 to 8 Chatacters")]
