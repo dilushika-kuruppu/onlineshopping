@@ -3,6 +3,7 @@ C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.Common\b
 C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.Common\bin\Debug\netcoreapp3.1\OnlineShopping.Common.pdb
 C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.Common\obj\Debug\netcoreapp3.1\OnlineShopping.Common.AssemblyInfoInputs.cache
 C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.Common\obj\Debug\netcoreapp3.1\OnlineShopping.Common.AssemblyInfo.cs
-C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.Common\obj\Debug\netcoreapp3.1\OnlineShopping.Common.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.Common\obj\Debug\netcoreapp3.1\OnlineShopping.Common.dll
 C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.Common\obj\Debug\netcoreapp3.1\OnlineShopping.Common.pdb
+C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.Common\obj\Debug\netcoreapp3.1\OnlineShopping.Common.csprojAssemblyReference.cache
+C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.Common\obj\Debug\netcoreapp3.1\OnlineShopping.Common.csproj.CoreCompileInputs.cache

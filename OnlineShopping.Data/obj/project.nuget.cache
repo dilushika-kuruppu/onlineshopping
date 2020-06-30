@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "F5jphT6vQ7ush93FH1d5XkMNNBbBgH3s+2nWO+wPDUIy9hqlUl6RJMT2KOU271T6Lg/rhMUwsWxdSHuRDcWhTA==",
+  "dgSpecHash": "oLYCRxWBUextZhdE6J5OWS02uoKTWTRdzXDG9hMerfxDa+U6dG/Se/gjIvHN11QeSjow9f+27w0nh6p9YRWOwQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Data\\OnlineShopping.Data.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,8 @@
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.options\\3.1.5\\microsoft.extensions.options.3.1.5.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.5\\microsoft.extensions.primitives.3.1.5.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.identity.client\\3.0.8\\microsoft.identity.client.3.0.8.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.identitymodel.logging\\6.7.0\\microsoft.identitymodel.logging.6.7.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.7.0\\microsoft.identitymodel.tokens.6.7.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.registry\\4.5.0\\microsoft.win32.registry.4.5.0.nupkg.sha512",
@@ -76,6 +78,7 @@
     "C:\\Users\\User\\.nuget\\packages\\system.runtime.serialization.json\\4.3.0\\system.runtime.serialization.json.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.runtime.serialization.primitives\\4.3.0\\system.runtime.serialization.primitives.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.security.accesscontrol\\4.5.0\\system.security.accesscontrol.4.5.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.security.cryptography.primitives\\4.3.0\\system.security.cryptography.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\system.security.cryptography.protecteddata\\4.5.0\\system.security.cryptography.protecteddata.4.5.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.security.permissions\\4.5.0\\system.security.permissions.4.5.0.nupkg.sha512",

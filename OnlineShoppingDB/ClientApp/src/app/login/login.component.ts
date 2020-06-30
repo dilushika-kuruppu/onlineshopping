@@ -26,7 +26,7 @@ export class LoginComponent implements OnInit {
 
   loggedIn() {
     const token = localStorage.getItem('token');
-    return !token;
+    return !!token;
   }
 
   logout() {

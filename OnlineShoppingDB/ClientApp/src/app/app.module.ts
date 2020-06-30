@@ -11,6 +11,7 @@ import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { AuthService } from './servicers/auth.service';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { LoginComponent } from './login/login.component';
     CounterComponent,
     FetchDataComponent,
     LoginComponent,
+    RegisterComponent,
     
   ],
   imports: [

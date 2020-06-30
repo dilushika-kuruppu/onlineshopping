@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
+using OnlineShopping.Business;
 using OnlineShopping.Data.Context;
 using OnlineShoppingDB.Server.Models;
 using System.Text;
@@ -26,9 +27,10 @@ namespace OnlineShoppingDB
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddDbContext<OnlineShoppingContext>(x => x.UseSqlServer(Configuration.GetConnectionString("")));
+            services.AddDbContext<OnlineShoppingContext>(x => x.UseSqlServer(Configuration.GetConnectionString("ConnectionStrings")));
             services.AddMvc();
             services.AddControllersWithViews();
+            services.AddScoped<IAuthBusiness, AuthBusiness>();
             services.AddScoped<IAuthRepository,AuthRepository>();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
@@ -36,7 +38,7 @@ namespace OnlineShoppingDB
                 {
                     ValidateIssuerSigningKey = true,
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.
-                    GetBytes(Configuration.GetSection("AppSetting:Token").Value)),
+                    GetBytes(Configuration.GetSection("AppSettings:Token").Value)),
                     ValidateIssuer = false,
                     ValidateAudience = false
 

@@ -9,8 +9,10 @@
       "OnlineShopping.Data/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "3.1.5",
+          "Microsoft.EntityFrameworkCore.Design": "3.1.5",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.5",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.5",
+          "Microsoft.IdentityModel.Tokens": "6.7.0",
           "OnlineShopping.Common": "1.0.0"
         },
         "runtime": {
@@ -268,6 +270,27 @@
           "lib/netcoreapp2.1/Microsoft.Identity.Client.dll": {
             "assemblyVersion": "3.0.8.0",
             "fileVersion": "3.0.8.0"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Logging/6.7.0": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Logging.dll": {
+            "assemblyVersion": "6.7.0.0",
+            "fileVersion": "6.7.0.10626"
+          }
+        }
+      },
+      "Microsoft.IdentityModel.Tokens/6.7.0": {
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0",
+          "Microsoft.IdentityModel.Logging": "6.7.0",
+          "System.Security.Cryptography.Cng": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.IdentityModel.Tokens.dll": {
+            "assemblyVersion": "6.7.0.0",
+            "fileVersion": "6.7.0.10626"
           }
         }
       },
@@ -697,6 +720,7 @@
           "System.Security.Principal.Windows": "4.5.0"
         }
       },
+      "System.Security.Cryptography.Cng/4.5.0": {},
       "System.Security.Cryptography.Primitives/4.3.0": {
         "dependencies": {
           "System.Diagnostics.Debug": "4.3.0",
@@ -869,6 +893,9 @@
         }
       },
       "OnlineShopping.Common/1.0.0": {
+        "dependencies": {
+          "Microsoft.IdentityModel.Tokens": "6.7.0"
+        },
         "runtime": {
           "OnlineShopping.Common.dll": {}
         }
@@ -1041,6 +1068,20 @@
       "sha512": "sha512-9E1gXBRJta8+UXooYpJkp/8g6Cy4kFQl3iURduGhR7/vU8rGKTWEMJ3tUKOO2m1qzJOfaog/n89lyjdi7S56Rg==",
       "path": "microsoft.identity.client/3.0.8",
       "hashPath": "microsoft.identity.client.3.0.8.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Logging/6.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HcUFr7ycJ9I/u12dnkBntY4pvrJoRT+FCuDyA1FPFbhFFulGjyEt63YUcBqbwkvmpgCDhi9fQ/inM0Izn4apeg==",
+      "path": "microsoft.identitymodel.logging/6.7.0",
+      "hashPath": "microsoft.identitymodel.logging.6.7.0.nupkg.sha512"
+    },
+    "Microsoft.IdentityModel.Tokens/6.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KL1hJq0UeLMaUHLImLifHKPs03lSuXDHzY7l/sADpaGyM2/TCCdEh2jlEsUKGDU2P7TLkzMW05+Mpu8sdVEhxw==",
+      "path": "microsoft.identitymodel.tokens/6.7.0",
+      "hashPath": "microsoft.identitymodel.tokens.6.7.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/2.0.0": {
       "type": "package",
@@ -1384,6 +1425,13 @@
       "sha512": "sha512-vW8Eoq0TMyz5vAG/6ce483x/CP83fgm4SJe5P8Tb1tZaobcvPrbMEL7rhH1DRdrYbbb6F0vq3OlzmK0Pkwks5A==",
       "path": "system.security.accesscontrol/4.5.0",
       "hashPath": "system.security.accesscontrol.4.5.0.nupkg.sha512"
+    },
+    "System.Security.Cryptography.Cng/4.5.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WG3r7EyjUe9CMPFSs6bty5doUqT+q9pbI80hlNzo2SkPkZ4VTuZkGWjpp77JB8+uaL4DFPRdBsAY+DX3dBK92A==",
+      "path": "system.security.cryptography.cng/4.5.0",
+      "hashPath": "system.security.cryptography.cng.4.5.0.nupkg.sha512"
     },
     "System.Security.Cryptography.Primitives/4.3.0": {
       "type": "package",

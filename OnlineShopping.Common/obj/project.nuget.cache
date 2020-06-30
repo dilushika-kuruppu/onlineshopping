@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "2gz1X2BcfNUWu8XsBxyYD1zKYB2Zigu+fOpmy1i6k8rgyS8FWc4FqADe1hISxFtiM42EysfrMDkkoex+8m8tYA==",
+  "dgSpecHash": "nnGd+w2YouoeAP8/dg7KrqJkV6g7NYd1lNy5BND78jOIrzW1+KbOle1cNwpwBpK3zXiEI6g4ztgNpXaViUP9GQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.identitymodel.logging\\6.7.0\\microsoft.identitymodel.logging.6.7.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.7.0\\microsoft.identitymodel.tokens.6.7.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

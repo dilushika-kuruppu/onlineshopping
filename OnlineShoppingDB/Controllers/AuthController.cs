@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
+using OnlineShopping.Business;
 using OnlineShopping.Common.Models;
 using OnlineShopping.Data.Context;
 using OnlineShoppingDB.Server.Dtos;
@@ -21,22 +22,22 @@ namespace OnlineShoppingDB.Server.Controllers
     [ApiController]
     public class AuthController : ControllerBase
     {
-        private readonly IAuthRepository _repo;
+        private readonly IAuthBusiness _authBusiness;
         private readonly IConfiguration _config;
 
-        public AuthController(IAuthRepository repo, IConfiguration config)
+        public AuthController(IAuthBusiness authBusiness, IConfiguration config)
         {
-           _repo = repo;
+            _authBusiness = authBusiness;
            _config = config;
         }
-
+        [Route("customer")]
         [HttpPost("customer")]
         public async Task<IActionResult> Customer(UserForCustomerDto userForCustomerDto)
         {
 
             userForCustomerDto.Username = userForCustomerDto.Username.ToLower();
 
-            if (await _repo.UserExists(userForCustomerDto.Username)) 
+            if (await _authBusiness.UserExists(userForCustomerDto.Username)) 
 
             return BadRequest("UserName Already Exists");
 
@@ -45,48 +46,28 @@ namespace OnlineShoppingDB.Server.Controllers
                 UserName = userForCustomerDto.Username
             };
 
-            var createdUser = await _repo.Customer(userToCreate, userForCustomerDto.Password);
+            var createdUser = await _authBusiness.Customer(userToCreate, userForCustomerDto.Password);
 
             return StatusCode(201);
 
         }
-
+        [Route("login")]
         [HttpPost("login")]
         public async Task<IActionResult> Login(UserForLoginDto userForLoginDto)
         {
 
-            var userFormRepo = await _repo.Login(userForLoginDto.UserName.ToLower(), userForLoginDto.Password);
+            var userFormRepo = await _authBusiness.Login(userForLoginDto.UserName.ToLower(), userForLoginDto.Password,
+                _config.GetSection("AppSettings:Token").Value);
 
             if (userFormRepo == null)
                 return Unauthorized();
 
-            //return null ;
-            var claims = new[]
-            {
-            //new Claim(ClaimTypes.NameIdentifier, userFormRepo.Id.ToString),
-            new Claim(ClaimTypes.Name, userFormRepo.UserName)
 
-            };
-
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config.GetSection("AppSettings:Token").Value));
-
-            var creds = new SigningCredentials(key,SecurityAlgorithms.HmacSha512Signature);
-
-            var tokenDescriptor = new SecurityTokenDescriptor
-            {
-                Subject = new ClaimsIdentity(claims),
-                Expires = DateTime.Now.AddDays(1),
-                SigningCredentials = creds
-            };
-
-            var tokenHandler = new JwtSecurityTokenHandler();
-
-            var token = tokenHandler.CreateToken(tokenDescriptor);
 
             return Ok(new
             {
-                token = tokenHandler.WriteToken(token)
-            });
+                token = userFormRepo.JWTToken
+            }) ;
         }
 
     }

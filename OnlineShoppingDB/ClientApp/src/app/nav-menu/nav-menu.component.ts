@@ -9,6 +9,8 @@ import { error } from '@angular/compiler/src/util';
 })
 export class NavMenuComponent implements OnInit {
   isExpanded = false;
+  registerMode = false;
+  loginMode = false;
  
 
   constructor() {
@@ -20,7 +22,12 @@ export class NavMenuComponent implements OnInit {
   collapse() {
     this.isExpanded = false;
   }
-
+  registertoggle() {
+    this.registerMode = !this.registerMode;
+  }
+  logintoggle() {
+    this.loginMode = !this.loginMode;
+  }
   toggle() {
     this.isExpanded = !this.isExpanded;
   }
