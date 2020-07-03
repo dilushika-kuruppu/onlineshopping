@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OnlineShopping.Common.Models;
+using OnlineShoppingDB.Server.Dtos;
 using OnlineShoppingDB.Server.Models;
 using System;
 using System.Collections.Generic;
@@ -20,28 +21,36 @@ namespace OnlineShopping.Data.Context
         {
             _context = context;
         }
-        public async Task<User> Customer(User user, string password)
+        public async Task<UserForCustomerDto> Customer(UserForCustomerDto user, string password)
         {
-            await _context.Users.AddAsync(user);
+            Customer customer = new Customer();
+            customer.Lastname = user.UserName;
+
+            await _context.Customer.AddAsync(customer);
             await _context.SaveChangesAsync();
 
             return user;
             
         }
 
-        public async Task<User> Login(string username, string password)
+        public async Task<UserForLoginDto> Login(string username, string password)
         {
-            var user = await _context.Users.FirstOrDefaultAsync(x => x.UserName == username);
+            var user = await _context.Login.FirstOrDefaultAsync(x => x.Username == username && x.Password == password);
             if (user == null)
             {
                 return null;
             }
-            return null;
+            return
+             new UserForLoginDto
+             {
+                 Id= user.Id,
+                 
+             };
         }
 
-        public async Task<bool> UserExists(string username)
+        public async Task<bool> UserExists(string username, int id)
         {
-            if (await _context.Users.AnyAsync(x => x.UserName == username))
+            if (await _context.Login.AnyAsync(x => x.Id == id))
             return true;
 
             return false;

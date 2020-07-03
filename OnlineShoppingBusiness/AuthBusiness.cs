@@ -1,6 +1,7 @@
 ﻿using Microsoft.IdentityModel.Tokens;
 using OnlineShopping.Common.Models;
 using OnlineShopping.Data.Context;
+using OnlineShoppingDB.Server.Dtos;
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
@@ -19,12 +20,12 @@ namespace OnlineShopping.Business
             _authRepository = authRepository;
         }
 
-        public Task<User> Customer(User userToCreate, string password)
+        public Task<UserForCustomerDto> Customer(UserForCustomerDto userToCreate, string password)
         {
             throw new NotImplementedException();
         }
 
-        public  async Task<User> Login(string username, string password , string token)
+        public  async Task<UserForLoginDto> Login(string username, string password , string token)
         {
             var user = await _authRepository.Login(username, password);
                       
@@ -53,7 +54,7 @@ namespace OnlineShopping.Business
 
             var tokenHandler = new JwtSecurityTokenHandler();
 
-            User userjwt = new User();
+            UserForLoginDto userjwt = new UserForLoginDto();
             SecurityToken tokenx = tokenHandler.CreateToken(tokenDescriptor);
             string a = tokenHandler.WriteToken(tokenx);
             userjwt.JWTToken = a;
@@ -62,7 +63,7 @@ namespace OnlineShopping.Business
          return userjwt;
         }
 
-        public Task<bool> UserExists(string username)
+        public Task<bool> UserExists(string username )
         {
             throw new NotImplementedException();
         }

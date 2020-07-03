@@ -12,5 +12,7 @@ namespace OnlineShopping.Common.Models
         public int CustomerId { get; set; }
 
 
+
+
     }
 }

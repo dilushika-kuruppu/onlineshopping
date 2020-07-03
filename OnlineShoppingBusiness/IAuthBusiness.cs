@@ -1,4 +1,5 @@
 ﻿using OnlineShopping.Common.Models;
+using OnlineShoppingDB.Server.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,8 +9,8 @@ namespace OnlineShopping.Business
 {
     public interface IAuthBusiness
     {
-        Task<User> Login(string username, string password, string token);
-        Task<User> Customer(User userToCreate, string password);
+        Task<UserForLoginDto> Login(string username, string password, string token);
+        Task<UserForCustomerDto> Customer(UserForCustomerDto userToCreate, string password);
         Task<bool> UserExists(string username);
     }
 }

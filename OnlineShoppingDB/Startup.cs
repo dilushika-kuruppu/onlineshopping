@@ -27,11 +27,11 @@ namespace OnlineShoppingDB
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<OnlineShoppingContext>(x => x.UseSqlServer(Configuration.GetConnectionString("ConnectionStrings")));
+            services.AddDbContext<OnlineShoppingContext>(x => x.UseSqlServer(Configuration.GetConnectionString("Connection")));
             services.AddMvc();
             services.AddControllersWithViews();
-            services.AddScoped<IAuthBusiness, AuthBusiness>();
-            services.AddScoped<IAuthRepository,AuthRepository>();
+            //services.AddScoped<IAuthBusiness, AuthBusiness>();
+            //services.AddScoped<IAuthRepository,AuthRepository>();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 options.TokenValidationParameters = new TokenValidationParameters

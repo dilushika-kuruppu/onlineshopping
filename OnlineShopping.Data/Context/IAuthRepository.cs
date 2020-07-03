@@ -1,5 +1,6 @@
 ﻿
 using OnlineShopping.Common.Models;
+using OnlineShoppingDB.Server.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -10,10 +11,10 @@ namespace OnlineShopping.Data.Context
 {
     public interface IAuthRepository
     {
-        Task<User> Customer(User user, string password);
-        Task<User> Login(string username, string password);
+        Task<UserForCustomerDto> Customer(UserForCustomerDto user, string password);
+        Task<UserForLoginDto> Login(string username, string password);
 
-        Task<bool> UserExists(string username);
+        Task<bool> UserExists(string username, int id);
         //Task Customer(OnlineShoppingDB.Server.Models.Login userToCreate, string password);
     }
 }

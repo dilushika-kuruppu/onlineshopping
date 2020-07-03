@@ -24,8 +24,8 @@ namespace OnlineShoppingDB.Server.Models
         public virtual DbSet<Payment> Payment { get; set; }
         public virtual DbSet<Product> Product { get; set; }
 
-        public DbSet<User> Users { get; set; }
-
+        
+        public DbSet<Login> Logins { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
