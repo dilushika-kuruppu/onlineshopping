@@ -15,7 +15,7 @@
                 <span class="input-group-text"><i class="fas fa-user"></i></span>
               </div>
               <input type="text" class="form-control" name="username"
-           placeholder="UserName" required [(ngModel)]="model.UserName">
+           placeholder="UserName" required [(ngModel)]="model.username">
 
             </div>
             <div class="input-group form-group">
@@ -23,15 +23,16 @@
                 <span class="input-group-text"><i class="fas fa-key"></i></span>
               </div>
               <input type="password" class="form-control"  name="password"
-           placeholder="Password" required [(ngModel)]="model.Password">
+           placeholder="Password" required [(ngModel)]="model.password">
             </div>
             <div class="row align-items-center remember">
               <input type="checkbox">Remember Me
             </div>
             <div class="form-group">
-           <input  routerLink="/home" class="btn float-right login_btn" type="submit" value="Login" (Click)="login()">
+           <input  class="btn float-right login_btn" type="submit" value="Login" (Click)="login()">
             </div>
           </form>
+
         </div>
         <div class="card-footer">
           <div class="d-flex justify-content-center links">

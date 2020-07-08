@@ -1,0 +1,11 @@
+{
+  "/api/Auth/login": {
+    "target": "https://localhost:44317/api/Auth/login",
+    "secure": false,
+    "pathRewrite": {
+      "^/api/Auth/login": ""
+    },
+    "changeOrigin": true
+  },
+
+}

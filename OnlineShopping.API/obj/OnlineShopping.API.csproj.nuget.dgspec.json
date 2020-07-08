@@ -36,6 +36,9 @@
               "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Data\\OnlineShopping.Data.csproj": {
                 "projectPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Data\\OnlineShopping.Data.csproj"
               },
+              "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.UnitTests\\OnlineShopping.UnitTests.csproj": {
+                "projectPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.UnitTests\\OnlineShopping.UnitTests.csproj"
+              },
               "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShoppingBusiness\\OnlineShopping.Business.csproj": {
                 "projectPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShoppingBusiness\\OnlineShopping.Business.csproj"
               }
@@ -254,6 +257,16 @@
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
+      }
+    },
+    "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.UnitTests\\OnlineShopping.UnitTests.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.UnitTests\\OnlineShopping.UnitTests.csproj",
+        "projectName": "OnlineShopping.UnitTests",
+        "projectPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.UnitTests\\OnlineShopping.UnitTests.csproj"
+      },
+      "frameworks": {
+        "net472": {}
       }
     },
     "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShoppingBusiness\\OnlineShopping.Business.csproj": {

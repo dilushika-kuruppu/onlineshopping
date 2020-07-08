@@ -13,10 +13,14 @@ export class NavMenuComponent implements OnInit {
   loginMode = false;
  
 
-  constructor() {
+  constructor(private authService: AuthService) {
   }
 
   ngOnInit() {
+    this.authService.loginStatus.subscribe(r => {
+      this.loginMode = r;
+    });
+    this.loginMode = this.authService.isLoggedIn();
   }
 
   collapse() {

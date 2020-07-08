@@ -1,6 +1,6 @@
 
 <!-- Navbar -->
-<nav *ngIf="nav-menu" class="navbar navbar-expand-md navbar-light">
+<nav *ngIf="loginMode" class="navbar navbar-expand-md navbar-light">
 
   <a class="navbar-brand" href="#!">
     <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="30" alt="mdb logo">
@@ -53,7 +53,7 @@
            class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light" (Click)="registertoggle()">Sign up</a>
       </li>
     </ul>
-    <div *ngIf="loggedIn()" class="dropdown show">
+    <div *ngIf="loginMode" class="dropdown show">
       <a class="btn btn-secondary dropdown-toggle">
         WelCome User
       </a>
