@@ -36,8 +36,9 @@ namespace OnlineShopping.Business
             
             var claims = new[]
             {
-            //new Claim(ClaimTypes.NameIdentifier, userFormRepo.Id.ToString),
-            new Claim(ClaimTypes.Name, user.UserName)
+                
+           new Claim(ClaimTypes.NameIdentifier, user.Id.ToString()),
+            new Claim(ClaimTypes.Name,username)
 
             };
 
@@ -63,7 +64,7 @@ namespace OnlineShopping.Business
          return userjwt;
         }
 
-        public Task<bool> UserExists(string username )
+        public Task<bool> UserExists(string username)
         {
             throw new NotImplementedException();
         }

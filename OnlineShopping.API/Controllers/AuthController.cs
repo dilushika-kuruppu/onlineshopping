@@ -59,13 +59,12 @@ namespace OnlineShoppingDB.Server.Controllers
         public async Task<IActionResult> Login(UserForLoginDto userForLoginDto)
         {
 
-            var userFormRepo = await _authBusiness.Login(userForLoginDto.UserName.ToLower(), userForLoginDto.Password,
-                _config.GetSection("AppSettings:Token").Value);
+          
 
+            var userFormRepo = await _authBusiness.Login(userForLoginDto.UserName.ToLower(), userForLoginDto.Password,
+              _config.GetSection("AppSettings:Token").Value);
             if (userFormRepo == null)
                 return Unauthorized();
-
-
 
             return Ok(new
             {
