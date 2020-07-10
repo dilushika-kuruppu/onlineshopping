@@ -16,15 +16,15 @@ namespace OnlineShopping.UnitTests
 
             //Arrange
  
-         var login = new Login();
-         string UserName = "dilu";
-          string Password = "dilu";
+//var login = new Login();
+        // string UserName = "dilu";
+        //  string Password = "dilu";
 
             //Act
-          var   flag = login.Login(UserName, Password);
+          //var   flag = login.Login(UserName, Password);
 
             //Assert
-          Assert.IsTrue(flag, "Login in failed for user: [" + UserName + "]");
+          //Assert.IsTrue(flag, "Login in failed for user: [" + UserName + "]");
         }
     }
 }

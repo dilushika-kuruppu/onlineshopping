@@ -1,6 +1,6 @@
 
 <!-- Navbar -->
-<nav *ngIf="loginMode" class="navbar navbar-expand-md navbar-light">
+<nav *ngIf="route.url != '/login'" class="navbar navbar-expand-md navbar-light">
 
   <a class="navbar-brand" href="#!">
     <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="30" alt="mdb logo">
@@ -43,14 +43,14 @@
           Contact
         </a>
       </li>
-      <li ng="nav-item">
-          <a routerLink="/login" class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light" (Click)="logintoggle()" >
+      <li *ngIf="!loginMode" ng="nav-item">
+          <a routerLink="/login" class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light"  >
           Sign in
         </a>
       </li>
-      <li class="nav-item pl-2 mb-2 mb-md-0">
+      <li *ngIf="!loginMode" class="nav-item pl-2 mb-2 mb-md-0">
           <a routerLink="/register"
-           class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light" (Click)="registertoggle()">Sign up</a>
+           class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light" >Sign up</a>
       </li>
     </ul>
     <div *ngIf="loginMode" class="dropdown show">

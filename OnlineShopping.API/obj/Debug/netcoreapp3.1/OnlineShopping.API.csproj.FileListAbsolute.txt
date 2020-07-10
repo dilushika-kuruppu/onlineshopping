@@ -160,3 +160,10 @@ C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.API\bin\
 C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.API\bin\Debug\netcoreapp3.1\libman.json
 C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.API\obj\Debug\netcoreapp3.1\OnlineShopping.API.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.API\obj\Debug\netcoreapp3.1\OnlineShopping.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.API\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.API\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.API\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.API\bin\Debug\netcoreapp3.1\OnlineShopping.UnitTests.dll
+C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.API\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.API\bin\Debug\netcoreapp3.1\OnlineShopping.UnitTests.pdb
+C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.API\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.TestPlatform.TestFramework.xml

@@ -34,6 +34,7 @@
           "OnlineShopping.Business": "1.0.0",
           "OnlineShopping.Common": "1.0.0",
           "OnlineShopping.Data": "1.0.0",
+          "OnlineShopping.UnitTests": "1.0.0",
           "bootstrap": "4.5.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -2444,6 +2445,22 @@
         },
         "compile": {
           "OnlineShopping.Data.dll": {}
+        }
+      },
+      "OnlineShopping.UnitTests/1.0.0": {
+        "runtime": {
+          "OnlineShopping.UnitTests.dll": {}
+        },
+        "compile": {
+          "OnlineShopping.UnitTests.dll": {}
+        }
+      },
+      "Microsoft.VisualStudio.TestPlatform.TestFramework/14.0.0.0": {
+        "runtime": {
+          "Microsoft.VisualStudio.TestPlatform.TestFramework.dll": {
+            "assemblyVersion": "14.0.0.0",
+            "fileVersion": "14.0.4701.2"
+          }
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -5285,6 +5302,16 @@
     },
     "OnlineShopping.Data/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OnlineShopping.UnitTests/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.VisualStudio.TestPlatform.TestFramework/14.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
