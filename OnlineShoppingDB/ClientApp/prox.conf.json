@@ -1,18 +1,7 @@
 {
-  "/api/Auth/login": {
-    "target": "https://localhost:44317/api/Auth/login",
+  "/api": {
+    "target": "https://localhost:44317",
     "secure": false,
-    "pathRewrite": {
-      "^/api/Auth/login": ""
-    },
-    "changeOrigin": true
-  },
-  "/api/Auth/customer": {
-    "target": "https://localhost:44317/api/Auth/customer",
-    "secure": false,
-    "pathRewrite": {
-      "^/api/Auth/customer": ""
-    },
     "changeOrigin": true
   }
 

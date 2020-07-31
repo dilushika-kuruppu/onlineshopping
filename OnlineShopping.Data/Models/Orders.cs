@@ -18,5 +18,6 @@ namespace OnlineShoppingDB.Server.Models
 
         public virtual Customer Customer { get; set; }
         public virtual ICollection<Payment> Payment { get; set; }
+        public int UserID { get; internal set; }
     }
 }

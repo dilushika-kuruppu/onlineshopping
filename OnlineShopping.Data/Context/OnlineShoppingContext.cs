@@ -26,6 +26,8 @@ namespace OnlineShoppingDB.Server.Models
 
         
         public DbSet<Login> Logins { get; set; }
+      
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)

@@ -1,6 +1,6 @@
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <!-- Navbar -->
-<nav *ngIf="route.url != '/login'" class="navbar navbar-expand-md navbar-light">
+<nav *ngIf="route.url != '/login'  " class="navbar navbar-expand-md navbar-light">
 
   <a class="navbar-brand" href="#!">
     <img src="https://mdbootstrap.com/img/logo/mdb-transaprent-noshadows.png" height="30" alt="mdb logo">
@@ -12,60 +12,55 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="basicExampleNav1">
+  <div class="collapse navbar-collapse col-md-6" id="basicExampleNav1">
 
     <!-- Right -->
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a href="#!" class="nav-link navbar-link-2 waves-effect">
-          <span class="badge badge-pill red">1</span>
-          <i class="fas fa-shopping-cart pl-0"></i>
+    <ul class="nav nav-pills">
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/home']">
+          Home
+          <span class="sr-only">(current)</span>
         </a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle waves-effect" id="navbarDropdownMenuLink3" data-toggle="dropdown"
-           aria-haspopup="true" aria-expanded="true">
-          <i class="sri lanka flag m-0"></i>
-        </a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Men</a>
-          <a class="dropdown-item" href="#">Women</a>
-          <a class="dropdown-item" href="#">Kids</a>
-        </div>
+      <li class="nav-item" routerLinkActive="active">
+        <a class="nav-link" [routerLink]="['/products']">Products</a>
       </li>
+      
+    </ul>
+
+  </div>
+    <!-- left -->
+  <div class="collapse navbar-collapse col-md-6" id="basicExampleNav1">
+    <ul class="navbar-nav ml-auto ">
       <li class="nav-item">
-        <a href="#!" class="nav-link waves-effect">
-          Shop
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#!" class="nav-link waves-effect">
-          Contact
+        <a routerLink="/cart" class="btn btn-info btn-lg">
+          <span class="glyphicon glyphicon-shopping-cart"></span> Cart
         </a>
       </li>
       <li *ngIf="!loginMode" ng="nav-item">
-          <a routerLink="/login" class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light"  >
+        <a routerLink="/login" class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">
           Sign in
         </a>
       </li>
       <li *ngIf="!loginMode" class="nav-item pl-2 mb-2 mb-md-0">
-          <a routerLink="/register"
-           class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light" >Sign up</a>
+        <a routerLink="/register"
+           class="btn btn-outline-info btn-md btn-rounded btn-navbar waves-effect waves-light">Sign up</a>
       </li>
+
     </ul>
-    <div *ngIf="loginMode" class="dropdown show">
-      <a class="btn btn-secondary dropdown-toggle">
-        WelCome User
+
+    <div *ngIf="loginMode" class="dropdown" dropdown>
+      <a class="dropdown-toggle text-light" dropdownToggle>
+        Welcome {{authService.decodeToken.unique_name | titlecase}}
       </a>
 
-      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-        <a class="dropdown-item" href="#"><i class="fa fa-user"></i>Edit Profile</a>
+      <div class="dropdown-menu mt-3" *dropdownMenu>
+        <a class="dropdown-item" href="#"><i class="fa fa-user"></i>Edit</a>
         <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#" (Click)="logout()"><i class="fa fa-sign-out"></i>Logout</a>
+        <a class="dropdown-item" href="#" (click)="logout()"><i class="fa fa-sign-out"></i>Log Out</a>
       </div>
-
     </div>
-    <!-- Links -->
-    </div>
+  </div>
 </nav>
 <!-- Navbar -->
+

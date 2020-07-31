@@ -27,15 +27,48 @@
 
   <ItemGroup>
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Compile Remove="ClientApp\src\app\category\**" />
     <Content Remove="$(SpaRoot)**" />
+    <Content Remove="ClientApp\src\app\category\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\category\**" />
     <None Remove="$(SpaRoot)**" />
+    <None Remove="ClientApp\src\app\category\**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ClientApp\src\app\category\category.component.css" />
+    <None Remove="ClientApp\src\app\category\category.component.html" />
+    <None Remove="ClientApp\src\app\category\category.component.spec.ts" />
+    <None Remove="ClientApp\src\app\category\category.component.ts" />
+    <None Remove="ClientApp\src\app\models\category.ts" />
+    <None Remove="ClientApp\src\app\models\customer.ts" />
+    <None Remove="ClientApp\src\app\models\order.ts" />
+    <None Remove="ClientApp\src\app\models\produts.ts" />
+    <None Remove="ClientApp\src\app\resolvers\category.resolvers.ts" />
+    <None Remove="ClientApp\src\app\resolvers\product-details.resolvers.ts" />
+    <None Remove="ClientApp\src\app\servicers\alertify.service.ts" />
+    <None Remove="ClientApp\src\app\servicers\error.interceptor.ts" />
+    <None Remove="ClientApp\src\app\servicers\product.service.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\OnlineShopping.Common\OnlineShopping.Common.csproj" />
     <ProjectReference Include="..\OnlineShopping.Data\OnlineShopping.Data.csproj" />
     <ProjectReference Include="..\OnlineShoppingBusiness\OnlineShopping.Business.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\models\category.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\models\order.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\models\produts.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\models\customer.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\resolvers\category.resolvers.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\src\app\resolvers\product-details.resolvers.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\servicers\error.interceptor.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\servicers\product.service.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../servicers/auth.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,8 @@ export class LoginComponent implements OnInit {
 
   model: any = {};
 
-  constructor(private route: Router, private authService: AuthService) {
+  constructor(private route: Router, private toastr: ToastrService,
+    public authService: AuthService) {
   }
 
   ngOnInit() {
@@ -21,20 +23,19 @@ export class LoginComponent implements OnInit {
     this.authService.login(this.model).subscribe(next => {
       this.loggedIn()
       this.route.navigate(['/home']);
-      console.log("Logging Successfully");
+      this.toastr.success("Logging Successfully");
     }, error => {
-      console.log("Failed to Logging");
+        this.toastr.error(error);
     });
   }
 
   loggedIn() {
-    const token = localStorage.getItem('token');
-    return !!token;
+    this.authService.isLoggedIn();
   }
 
   logout() {
     localStorage.removeItem('token');
-    console.log("Logged Out");
+    this.toastr.success("Logged Out");
   }
 
 }

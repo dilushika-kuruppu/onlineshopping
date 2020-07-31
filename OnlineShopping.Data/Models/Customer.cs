@@ -18,6 +18,7 @@ namespace OnlineShoppingDB.Server.Models
         public string Address2 { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
+        public string UserName { get; set; }
 
         public virtual ICollection<Login> Login { get; set; }
         public virtual ICollection<Orders> Orders { get; set; }

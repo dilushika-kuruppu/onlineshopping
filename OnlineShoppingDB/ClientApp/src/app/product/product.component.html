@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="card mb-4">
+      <div class=" card-img-wrapper">
+        <img class="card-img-top" src="{{product.PhotoUrl}}" alt="{{product.knownAs}} " />
+        <div class="card-body p-1">
+          <h5 class="card-title text-center-mb-1">
+            {{product.knowAs}}, {{Product.price}}
+          </h5>
+          <p class="card-text">{{product.description}}</p>
+          <a class="btn btn-primary" [routerLink]="['./product/',  product.id]">More Details</a>
+        </div>
+        <div class="card-footer">
+          <div class="btn-group d-flex">
+            <button class="btn btn-primary w-100"> Buy Now </button>
+            <button class="btn btn-primary w-100">Add to Cart </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+</div>

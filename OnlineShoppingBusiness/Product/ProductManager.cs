@@ -1,0 +1,52 @@
+﻿using AutoMapper;
+using OnlineShopping.Common.ProductDto;
+using OnlineShopping.Data.ProductRepository;
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OnlineShopping.Business.Product
+{
+    public class ProductManager : IProductManager
+    {
+
+        private readonly IProductRepository _productRepository;
+        private readonly IMapper _mapper;
+        public ProductManager(IProductRepository productRepository, IMapper mapper)
+        {
+            _mapper = mapper;
+            _productRepository = productRepository;
+        }
+        /// <summary>Gets the product.</summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns></returns>
+        public async Task<ProductDetailDto> GetProduct(int id)
+        {
+            var product = await _productRepository.GetProduct(id);
+            var productDetail = _mapper.Map<ProductDetailDto>(product);
+            return productDetail;
+        }
+
+
+
+        /// <summary>Gets the productby category.</summary>
+        /// <param name="id">The identifier.</param>
+        /// <returns></returns>
+        public async Task<IEnumerable<ProductDetailDto>> GetProductbyCategory(int id)
+        {
+            var productbyCategory = await _productRepository.GetProductbyCategory(id);
+            return productbyCategory;
+        }
+
+        public async Task<IEnumerable<ProductListDto>> GetProducts()
+        {
+            var products = await _productRepository.GetProducts();
+            var prdoctsList = _mapper.Map<IEnumerable<ProductListDto>>(products);
+            return prdoctsList;
+        }
+    }
+
+}
+    
+

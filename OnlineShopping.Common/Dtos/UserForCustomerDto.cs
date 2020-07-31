@@ -26,7 +26,7 @@ namespace OnlineShoppingDB.Server.Dtos
         public string Password { get; set; }
 
         [Required]
-        public string UserName => FirstName + " " + LastName ;
+        public string UserName { get; set; }
 
  
     }

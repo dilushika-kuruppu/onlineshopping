@@ -5,11 +5,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.6.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\OnlineShopping.Data\OnlineShopping.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="OnlineShopping\Business\" />
   </ItemGroup>
 
 </Project>
