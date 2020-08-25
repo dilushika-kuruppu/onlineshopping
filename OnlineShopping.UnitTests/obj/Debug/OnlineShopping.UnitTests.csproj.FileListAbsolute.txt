@@ -1,2 +1,0 @@
-C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.UnitTests\obj\Debug\OnlineShopping.UnitTests.csprojAssemblyReference.cache
-C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.UnitTests\obj\Debug\OnlineShopping.UnitTests.csproj.CoreCompileInputs.cache

@@ -8,15 +8,23 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using OnlineShopping.API.Helpers;
 using OnlineShopping.Business;
+using OnlineShopping.Business.Category;
+using OnlineShopping.Business.Order;
+using OnlineShopping.Business.Product;
 using OnlineShopping.Data.Context;
 using OnlineShoppingDB.Server.Models;
+
+using OnlineShopping.Business.Email;
+using OnlineShopping.Data.Repository;
 
 namespace OnlineShopping.API
 {
@@ -36,8 +44,17 @@ namespace OnlineShopping.API
             services.AddControllers();
             services.AddDbContext<OnlineShoppingContext>(x => x.UseSqlServer(Configuration.GetConnectionString("Connection")));
             services.AddMvc();
+            services.AddAutoMapper(typeof(AutoMapperProfile).Assembly);
+            services.AddScoped<IUnitofWork, UnitofWork>();
+            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IOrderItemRepository, OrderItemRepository>(); 
+            
             services.AddScoped<IAuthBusiness, AuthBusiness>();
+            services.AddScoped<IProductManager, ProductManager>();
+            services.AddScoped<ICategoryManager, CategoryManager>();  
             services.AddScoped<IAuthRepository, AuthRepository>();
+            services.AddScoped<IEmail, Email>();
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
              .AddJwtBearer(options =>
              options.TokenValidationParameters = new TokenValidationParameters

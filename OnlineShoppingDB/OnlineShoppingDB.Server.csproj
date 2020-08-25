@@ -33,9 +33,21 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\app\models\orderPayment.ts" />
+    <None Remove="ClientApp\src\app\resolvers\cart-details.resolvers.ts" />
+    <None Remove="ClientApp\src\app\servicers\payment.service.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\OnlineShopping.Common\OnlineShopping.Common.csproj" />
     <ProjectReference Include="..\OnlineShopping.Data\OnlineShopping.Data.csproj" />
     <ProjectReference Include="..\OnlineShoppingBusiness\OnlineShopping.Business.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\app\models\orderPayment.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\resolvers\cart-details.resolvers.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\servicers\payment.service.ts" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

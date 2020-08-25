@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace OnlineShoppingDB.Server.Models
+namespace OnlineShopping.Data.Models
 {
     public partial class Orders
     {

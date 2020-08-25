@@ -1,5 +1,4 @@
 ﻿using Microsoft.IdentityModel.Tokens;
-using OnlineShopping.Common.Models;
 using OnlineShopping.Data.Context;
 using OnlineShoppingDB.Server.Dtos;
 using System;

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace OnlineShoppingDB.Server.Models
+namespace OnlineShopping.Data.Models
 {
     public partial class Customer
     {
@@ -18,6 +18,7 @@ namespace OnlineShoppingDB.Server.Models
         public string Address2 { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
+        public string Username { get; set; }
 
         public virtual ICollection<Login> Login { get; set; }
         public virtual ICollection<Orders> Orders { get; set; }

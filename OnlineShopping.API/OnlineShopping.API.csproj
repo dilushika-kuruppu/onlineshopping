@@ -5,6 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
     <PackageReference Include="bootstrap" Version="4.5.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.5" />
@@ -24,7 +26,6 @@
   <ItemGroup>
     <ProjectReference Include="..\OnlineShopping.Common\OnlineShopping.Common.csproj" />
     <ProjectReference Include="..\OnlineShopping.Data\OnlineShopping.Data.csproj" />
-    <ProjectReference Include="..\OnlineShopping.UnitTests\OnlineShopping.UnitTests.csproj" />
     <ProjectReference Include="..\OnlineShoppingBusiness\OnlineShopping.Business.csproj" />
   </ItemGroup>
 

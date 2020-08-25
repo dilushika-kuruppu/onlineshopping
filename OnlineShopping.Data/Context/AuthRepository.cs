@@ -1,5 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
-using OnlineShopping.Common.Models;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using OnlineShopping.Data.Models;
 using OnlineShoppingDB.Server.Dtos;
 using OnlineShoppingDB.Server.Models;
 using System;
@@ -16,10 +17,12 @@ namespace OnlineShopping.Data.Context
 
     {
         private readonly OnlineShoppingContext _context;
+        private readonly IMapper _mapper;
 
-        public AuthRepository(OnlineShoppingContext context)
+        public AuthRepository(OnlineShoppingContext context, IMapper mapper)
         {
             _context = context;
+            _mapper = mapper;
         }
         public async Task<UserForCustomerDto> Customer(UserForCustomerDto user, string password)
         {

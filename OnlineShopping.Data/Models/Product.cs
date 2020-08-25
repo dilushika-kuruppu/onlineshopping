@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace OnlineShoppingDB.Server.Models
+namespace OnlineShopping.Data.Models
 {
     public partial class Product
     {
@@ -9,7 +9,7 @@ namespace OnlineShoppingDB.Server.Models
         public int? CategoryId { get; set; }
         public string Name { get; set; }
         public string Price { get; set; }
-        public byte[] Image { get; set; }
+        public string Image { get; set; }
         public string Description { get; set; }
 
         public virtual Category Category { get; set; }

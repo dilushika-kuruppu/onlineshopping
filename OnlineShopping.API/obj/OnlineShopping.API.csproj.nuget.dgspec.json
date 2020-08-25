@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.API\\OnlineShopping.API.csproj": {}
+    "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShopping.API\\OnlineShopping.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.API\\OnlineShopping.API.csproj": {
+    "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShopping.API\\OnlineShopping.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.API\\OnlineShopping.API.csproj",
+        "projectUniqueName": "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShopping.API\\OnlineShopping.API.csproj",
         "projectName": "OnlineShopping.API",
-        "projectPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.API\\OnlineShopping.API.csproj",
+        "projectPath": "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShopping.API\\OnlineShopping.API.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.API\\obj\\",
+        "outputPath": "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShopping.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,17 +30,14 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj": {
-                "projectPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj"
+              "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj": {
+                "projectPath": "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj"
               },
-              "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Data\\OnlineShopping.Data.csproj": {
-                "projectPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Data\\OnlineShopping.Data.csproj"
+              "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShopping.Data\\OnlineShopping.Data.csproj": {
+                "projectPath": "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShopping.Data\\OnlineShopping.Data.csproj"
               },
-              "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.UnitTests\\OnlineShopping.UnitTests.csproj": {
-                "projectPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.UnitTests\\OnlineShopping.UnitTests.csproj"
-              },
-              "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShoppingBusiness\\OnlineShopping.Business.csproj": {
-                "projectPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShoppingBusiness\\OnlineShopping.Business.csproj"
+              "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShoppingBusiness\\OnlineShopping.Business.csproj": {
+                "projectPath": "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShoppingBusiness\\OnlineShopping.Business.csproj"
               }
             }
           }
@@ -54,6 +51,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[3.1.5, )"
@@ -113,14 +118,14 @@
         }
       }
     },
-    "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj": {
+    "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj",
+        "projectUniqueName": "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj",
         "projectName": "OnlineShopping.Common",
-        "projectPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj",
+        "projectPath": "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\obj\\",
+        "outputPath": "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -150,6 +155,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
               "version": "[6.7.0, )"
@@ -174,14 +187,14 @@
         }
       }
     },
-    "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Data\\OnlineShopping.Data.csproj": {
+    "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShopping.Data\\OnlineShopping.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Data\\OnlineShopping.Data.csproj",
+        "projectUniqueName": "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShopping.Data\\OnlineShopping.Data.csproj",
         "projectName": "OnlineShopping.Data",
-        "projectPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Data\\OnlineShopping.Data.csproj",
+        "projectPath": "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShopping.Data\\OnlineShopping.Data.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Data\\obj\\",
+        "outputPath": "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShopping.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -200,8 +213,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj": {
-                "projectPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj"
+              "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj": {
+                "projectPath": "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj"
               }
             }
           }
@@ -215,6 +228,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.5, )"
@@ -259,24 +280,14 @@
         }
       }
     },
-    "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.UnitTests\\OnlineShopping.UnitTests.csproj": {
-      "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.UnitTests\\OnlineShopping.UnitTests.csproj",
-        "projectName": "OnlineShopping.UnitTests",
-        "projectPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.UnitTests\\OnlineShopping.UnitTests.csproj"
-      },
-      "frameworks": {
-        "net472": {}
-      }
-    },
-    "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShoppingBusiness\\OnlineShopping.Business.csproj": {
+    "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShoppingBusiness\\OnlineShopping.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShoppingBusiness\\OnlineShopping.Business.csproj",
+        "projectUniqueName": "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShoppingBusiness\\OnlineShopping.Business.csproj",
         "projectName": "OnlineShopping.Business",
-        "projectPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShoppingBusiness\\OnlineShopping.Business.csproj",
+        "projectPath": "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShoppingBusiness\\OnlineShopping.Business.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShoppingBusiness\\obj\\",
+        "outputPath": "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShoppingBusiness\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -295,8 +306,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Data\\OnlineShopping.Data.csproj": {
-                "projectPath": "C:\\Users\\User\\source\\repos\\OnlineShopping\\onlineshopping\\OnlineShopping.Data\\OnlineShopping.Data.csproj"
+              "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj": {
+                "projectPath": "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShopping.Common\\OnlineShopping.Common.csproj"
+              },
+              "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShopping.Data\\OnlineShopping.Data.csproj": {
+                "projectPath": "D:\\Angular\\OnlineShopping\\onlineshopping\\OnlineShopping.Data\\OnlineShopping.Data.csproj"
               }
             }
           }
@@ -310,6 +324,14 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.0.0, )"
+            },
+            "NETCore.MailKit": {
+              "target": "Package",
+              "version": "[2.0.3, )"
+            },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[6.6.0, )"

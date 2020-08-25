@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
-using OnlineShopping.Common.Models;
+using OnlineShopping.Data.Models;
 
 namespace OnlineShoppingDB.Server.Models
 {
@@ -25,7 +25,7 @@ namespace OnlineShoppingDB.Server.Models
         public virtual DbSet<Product> Product { get; set; }
 
         
-        public DbSet<Login> Logins { get; set; }
+       
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)

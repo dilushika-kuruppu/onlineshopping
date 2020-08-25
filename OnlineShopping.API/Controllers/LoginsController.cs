@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using OnlineShopping.Data.Models;
 using OnlineShoppingDB.Server.Models;
 
 namespace OnlineShopping.API.Controllers

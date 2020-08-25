@@ -12,12 +12,12 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using OnlineShopping.Business;
-using OnlineShopping.Common.Models;
 using OnlineShopping.Data.Context;
+using OnlineShopping.Data.Models;
 using OnlineShoppingDB.Server.Dtos;
 using OnlineShoppingDB.Server.Models;
 
-namespace OnlineShoppingDB.Server.Controllers
+namespace OnlineShoppingDB.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -75,13 +75,13 @@ namespace OnlineShoppingDB.Server.Controllers
         }
         // GET: api/Auth
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Models.Login>>> GetLogin()
+        public async Task<ActionResult<IEnumerable<Login>>> GetLogin()
         {
             return await _context.Login.ToListAsync();
         }
         // GET: api/Auth/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Models.Login>> GetLogin(int id)
+        public async Task<ActionResult<Login>> GetLogin(int id)
         {
             var login = await _context.Login.FindAsync(id);
 

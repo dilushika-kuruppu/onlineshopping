@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace OnlineShoppingDB.Server.Models
+namespace OnlineShopping.Data.Models
 {
     public partial class OrderItem
     {
@@ -9,6 +9,6 @@ namespace OnlineShoppingDB.Server.Models
         public int? OrderId { get; set; }
         public int? ProductId { get; set; }
         public string ProductPrice { get; set; }
-        public decimal? Quantity { get; set; }
+        public int Quantity { get; set; }
     }
 }
