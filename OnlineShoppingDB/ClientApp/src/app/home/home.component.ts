@@ -11,7 +11,10 @@ import { ProductService } from '../servicers/product.service';
 })
 export class HomeComponent implements OnInit {
   category: Category[];
+<<<<<<< HEAD
   selectedLevel: Category;
+=======
+>>>>>>> ad49b4b0c2207cbde6f0503cba0455cafbd7b9d2
   
   constructor(private route: ActivatedRoute, private productService: ProductService) {
    

@@ -21,6 +21,7 @@ C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShoppingBusiness\
 C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShoppingBusiness\obj\Debug\netcoreapp3.1\OnlineShopping.Business.csproj.CopyComplete
 C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShoppingBusiness\obj\Debug\netcoreapp3.1\OnlineShopping.Business.dll
 C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShoppingBusiness\obj\Debug\netcoreapp3.1\OnlineShopping.Business.pdb
+<<<<<<< HEAD
 D:\Angular\OnlineShopping\onlineshopping\OnlineShoppingBusiness\bin\Debug\netcoreapp3.1\OnlineShopping.Business.deps.json
 D:\Angular\OnlineShopping\onlineshopping\OnlineShoppingBusiness\bin\Debug\netcoreapp3.1\OnlineShopping.Business.dll
 D:\Angular\OnlineShopping\onlineshopping\OnlineShoppingBusiness\bin\Debug\netcoreapp3.1\OnlineShopping.Business.pdb
@@ -35,3 +36,5 @@ D:\Angular\OnlineShopping\onlineshopping\OnlineShoppingBusiness\obj\Debug\netcor
 D:\Angular\OnlineShopping\onlineshopping\OnlineShoppingBusiness\obj\Debug\netcoreapp3.1\OnlineShopping.Business.csproj.CopyComplete
 D:\Angular\OnlineShopping\onlineshopping\OnlineShoppingBusiness\obj\Debug\netcoreapp3.1\OnlineShopping.Business.dll
 D:\Angular\OnlineShopping\onlineshopping\OnlineShoppingBusiness\obj\Debug\netcoreapp3.1\OnlineShopping.Business.pdb
+=======
+>>>>>>> ad49b4b0c2207cbde6f0503cba0455cafbd7b9d2

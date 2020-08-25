@@ -1,14 +1,21 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 using OnlineShopping.Common.OrderProductDto;
+<<<<<<< HEAD
 using OnlineShopping.Data.Models;
+=======
+>>>>>>> ad49b4b0c2207cbde6f0503cba0455cafbd7b9d2
 using OnlineShoppingDB.Server.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 
+<<<<<<< HEAD
 namespace OnlineShopping.Data.Repository
+=======
+namespace OnlineShopping.Data.OderItemRepository
+>>>>>>> ad49b4b0c2207cbde6f0503cba0455cafbd7b9d2
 {
    public class OrderItemRepository: IOrderItemRepository
     {
@@ -16,7 +23,11 @@ namespace OnlineShopping.Data.Repository
 
         private readonly IMapper _mapper;
 
+<<<<<<< HEAD
         /// <summary>Initializes a new instance of the <see cref="OrderPItemRepository" /> class.</summary>
+=======
+        /// <summary>Initializes a new instance of the <see cref="OrderProductRepository" /> class.</summary>
+>>>>>>> ad49b4b0c2207cbde6f0503cba0455cafbd7b9d2
         /// <param name="dataContext">The data context.</param>
         /// <param name="mapper">The mapper.</param>
         public OrderItemRepository(OnlineShoppingContext context, IMapper mapper)
@@ -25,7 +36,11 @@ namespace OnlineShopping.Data.Repository
             _mapper = mapper;
         }
         /// <summary>Adds the order product.</summary>
+<<<<<<< HEAD
         /// <param name="orderItemDto">The order product dto.</param>
+=======
+        /// <param name="orderProductDto">The order product dto.</param>
+>>>>>>> ad49b4b0c2207cbde6f0503cba0455cafbd7b9d2
         /// <returns></returns>
         public async Task<OrderItemDto> AddOrderItem(OrderItemDto orderItemDto)
         {

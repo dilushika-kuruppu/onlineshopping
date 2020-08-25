@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 ﻿using AutoMapper;
 using OnlineShopping.Business.Email;
 using OnlineShopping.Common.CommonDto;
 using OnlineShopping.Common.OrderDto;
 using OnlineShopping.Common.OrderProductDto;
 using OnlineShopping.Data.Repository;
+=======
+﻿using OnlineShopping.Common.CommonDto;
+using OnlineShopping.Common.OrderDto;
+using OnlineShopping.Common.OrderProductDto;
+using OnlineShopping.Data.OderItemRepository;
+using OnlineShopping.Data.OrderRepository;
+>>>>>>> ad49b4b0c2207cbde6f0503cba0455cafbd7b9d2
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -13,15 +21,21 @@ namespace OnlineShopping.Business.Order
 {
     public class OrderManager : IOrderManager
     {
+<<<<<<< HEAD
         private readonly IUnitofWork _unitofWork;
         private readonly IEmail _email;
 
 
+=======
+        private readonly IOrderRepository _orderRepository;
+        private readonly IOrderItemRepository _orderItemRepository;
+>>>>>>> ad49b4b0c2207cbde6f0503cba0455cafbd7b9d2
 
         /// <summary>Initializes a new instance of the <see cref="OrderManager" /> class.</summary>
         /// <param name="orderRepository">The order repository.</param>
         /// <param name="orderItemRepository">The order product repository.</param>
         /// <param name="mapper">The mapper.</param>
+<<<<<<< HEAD
         public OrderManager(IUnitofWork unitofWork, IEmail email)
         {
             _unitofWork = unitofWork;
@@ -87,6 +101,55 @@ namespace OnlineShopping.Business.Order
         }
 
   
+=======
+        public OrderManager(IOrderRepository orderRepository , IOrderItemRepository orderItemRepository)
+        {
+            
+            _orderRepository = orderRepository;
+            _orderItemRepository = orderItemRepository;
+        }
+
+        public async Task<OrderDto> AddOrder(CommonDto commonDto)
+        {
+            OrderDto orderResult = await _orderRepository.CheckOrderStatus(commonDto.UserID);
+
+            if (orderResult == null)
+            {
+                orderResult.UserID = commonDto.UserID;
+
+                var orderBusiness = await _orderRepository.AddOrder(orderResult);
+
+                OrderItemDto orderItemobject = new OrderItemDto
+                {
+                    ProductId = commonDto.ProductId,
+                    OrderId = orderBusiness.ID,
+                    ProductPrice = commonDto.Price,
+                    Quantity = commonDto.Quantity
+                };
+
+                await _orderItemRepository.AddOrderItem(orderItemobject);
+
+
+                return orderBusiness;
+            }
+            else
+            {
+                OrderItemDto orderItemobject = new OrderItemDto
+                {
+                    ProductId = commonDto.ProductId,
+                    OrderId = orderResult.ID,
+                    ProductPrice = commonDto.Price,
+                    Quantity = commonDto.Quantity
+                };
+
+
+                await _orderItemRepository.AddOrderItem(orderItemobject);
+
+                return orderResult;
+            }
+        }
+
+>>>>>>> ad49b4b0c2207cbde6f0503cba0455cafbd7b9d2
 
         /// <summary>Adds the order.</summary>
         /// <param name="commonDto">The common dto.</param>
@@ -96,6 +159,7 @@ namespace OnlineShopping.Business.Order
         /// <summary>Deletes the order.</summary>
         /// <param name="id">The identifier.</param>
         /// <returns></returns>
+<<<<<<< HEAD
         public async Task<bool> DeleteOrder(int id)
         {
             OrderItemDto orderItem = await _unitofWork.OrderItemRepository.GetOrderItem(id);
@@ -106,12 +170,25 @@ namespace OnlineShopping.Business.Order
             _unitofWork.OrderItemRepository.Delete(orderItem);
             return await _unitofWork.OrderItemRepository.SaveAll();
         }
+=======
+      public async Task<bool> DeleteOrder(int id)
+      {
+       OrderItemDto orderItem = await _orderItemRepository.GetOrderItem(id);
+
+        if (orderItem == null)
+               return false;
+
+            _orderItemRepository.Delete(orderItem);
+          return await _orderItemRepository.SaveAll();
+    }
+>>>>>>> ad49b4b0c2207cbde6f0503cba0455cafbd7b9d2
 
         /// <summary>Gets the order.</summary>
         /// <param name="userId">The user identifier.</param>
         /// <returns></returns>
         public async Task<IEnumerable<OrderDetailsDto>> GetOrder(int userId)
         {
+<<<<<<< HEAD
             IEnumerable<OrderDetailsDto> getOrderDetail = await _unitofWork.OrderRepository.GetOrder(userId);
             return getOrderDetail;
         }
@@ -129,3 +206,12 @@ namespace OnlineShopping.Business.Order
     }
 }
 
+=======
+            IEnumerable<OrderDetailsDto> getOrderDetail = await _orderRepository.GetOrder(userId);
+            return getOrderDetail;
+        }
+
+      
+    }
+}
+>>>>>>> ad49b4b0c2207cbde6f0503cba0455cafbd7b9d2

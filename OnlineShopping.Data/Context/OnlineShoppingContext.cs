@@ -25,7 +25,13 @@ namespace OnlineShoppingDB.Server.Models
         public virtual DbSet<Product> Product { get; set; }
 
         
+<<<<<<< HEAD
        
+=======
+        public DbSet<Login> Logins { get; set; }
+      
+
+>>>>>>> ad49b4b0c2207cbde6f0503cba0455cafbd7b9d2
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)

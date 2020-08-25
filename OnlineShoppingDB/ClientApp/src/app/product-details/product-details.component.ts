@@ -3,7 +3,10 @@ import { Product } from '../models/produts';
 import { ProductService } from '../servicers/product.service';
 import { ActivatedRoute } from '@angular/router';
 import { error } from '@angular/compiler/src/util';
+<<<<<<< HEAD
 import { ToastrService } from 'ngx-toastr';
+=======
+>>>>>>> ad49b4b0c2207cbde6f0503cba0455cafbd7b9d2
 
 @Component({
   selector: 'app-product-details',
@@ -12,16 +15,21 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class ProductDetailsComponent implements OnInit {
   product: Product;
+<<<<<<< HEAD
 
   cartService: any;
   constructor(private productService: ProductService, private toastr: ToastrService, private route: ActivatedRoute) { }
 
+=======
+  constructor(private productService: ProductService, private route: ActivatedRoute) { }
+>>>>>>> ad49b4b0c2207cbde6f0503cba0455cafbd7b9d2
 
   ngOnInit() {
     this.route.data.subscribe(data => {
       this.product = data['product'];
     });
   }
+<<<<<<< HEAD
 
   addToCart() {
     console.log(this.product);
@@ -45,6 +53,8 @@ export class ProductDetailsComponent implements OnInit {
 
   }
 
+=======
+>>>>>>> ad49b4b0c2207cbde6f0503cba0455cafbd7b9d2
   //loadProduct() {
   //  this.productService.getProduct(this.route.snapshot.params['id']).subscribe((product: Product) => {
   //    this.product = product;
@@ -54,5 +64,8 @@ export class ProductDetailsComponent implements OnInit {
   //    });
   //}
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ad49b4b0c2207cbde6f0503cba0455cafbd7b9d2
 }

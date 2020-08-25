@@ -1,5 +1,9 @@
 import { Injectable } from "@angular/core";
+<<<<<<< HEAD
 import { Product } from "../models/products";
+=======
+import { Product } from "../models/produts";
+>>>>>>> ad49b4b0c2207cbde6f0503cba0455cafbd7b9d2
 import { Resolve, Router, ActivatedRouteSnapshot } from "@angular/router";
 import { ProductService } from "../servicers/product.service";
 import { Observable, of, throwError } from "rxjs";

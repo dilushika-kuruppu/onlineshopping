@@ -7,6 +7,7 @@ C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.Common\o
 C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.Common\obj\Debug\netcoreapp3.1\OnlineShopping.Common.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.Common\obj\Debug\netcoreapp3.1\OnlineShopping.Common.dll
 C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.Common\obj\Debug\netcoreapp3.1\OnlineShopping.Common.pdb
+<<<<<<< HEAD
 D:\Angular\OnlineShopping\onlineshopping\OnlineShopping.Common\bin\Debug\netcoreapp3.1\OnlineShopping.Common.deps.json
 D:\Angular\OnlineShopping\onlineshopping\OnlineShopping.Common\bin\Debug\netcoreapp3.1\OnlineShopping.Common.dll
 D:\Angular\OnlineShopping\onlineshopping\OnlineShopping.Common\bin\Debug\netcoreapp3.1\OnlineShopping.Common.pdb
@@ -16,3 +17,5 @@ D:\Angular\OnlineShopping\onlineshopping\OnlineShopping.Common\obj\Debug\netcore
 D:\Angular\OnlineShopping\onlineshopping\OnlineShopping.Common\obj\Debug\netcoreapp3.1\OnlineShopping.Common.dll
 D:\Angular\OnlineShopping\onlineshopping\OnlineShopping.Common\obj\Debug\netcoreapp3.1\OnlineShopping.Common.pdb
 D:\Angular\OnlineShopping\onlineshopping\OnlineShopping.Common\obj\Debug\netcoreapp3.1\OnlineShopping.Common.csprojAssemblyReference.cache
+=======
+>>>>>>> ad49b4b0c2207cbde6f0503cba0455cafbd7b9d2

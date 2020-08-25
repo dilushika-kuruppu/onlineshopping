@@ -6,8 +6,13 @@ using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+<<<<<<< HEAD
 using OnlineShopping.Business.Category;
 using OnlineShopping.Data.Repository;
+=======
+using OnlineShopping.Business.Categary;
+using OnlineShopping.Data.CategoryRepository;
+>>>>>>> ad49b4b0c2207cbde6f0503cba0455cafbd7b9d2
 using OnlineShoppingDB.Server.Models;
 
 namespace OnlineShopping.API.Controllers

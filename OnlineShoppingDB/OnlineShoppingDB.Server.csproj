@@ -27,15 +27,35 @@
 
   <ItemGroup>
     <!-- Don't publish the SPA source files, but do show them in the project files list -->
+    <Compile Remove="ClientApp\src\app\category\**" />
     <Content Remove="$(SpaRoot)**" />
+    <Content Remove="ClientApp\src\app\category\**" />
+    <EmbeddedResource Remove="ClientApp\src\app\category\**" />
     <None Remove="$(SpaRoot)**" />
+    <None Remove="ClientApp\src\app\category\**" />
     <None Include="$(SpaRoot)**" Exclude="$(SpaRoot)node_modules\**" />
   </ItemGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <None Remove="ClientApp\src\app\models\orderPayment.ts" />
     <None Remove="ClientApp\src\app\resolvers\cart-details.resolvers.ts" />
     <None Remove="ClientApp\src\app\servicers\payment.service.ts" />
+=======
+    <None Remove="ClientApp\src\app\category\category.component.css" />
+    <None Remove="ClientApp\src\app\category\category.component.html" />
+    <None Remove="ClientApp\src\app\category\category.component.spec.ts" />
+    <None Remove="ClientApp\src\app\category\category.component.ts" />
+    <None Remove="ClientApp\src\app\models\category.ts" />
+    <None Remove="ClientApp\src\app\models\customer.ts" />
+    <None Remove="ClientApp\src\app\models\order.ts" />
+    <None Remove="ClientApp\src\app\models\produts.ts" />
+    <None Remove="ClientApp\src\app\resolvers\category.resolvers.ts" />
+    <None Remove="ClientApp\src\app\resolvers\product-details.resolvers.ts" />
+    <None Remove="ClientApp\src\app\servicers\alertify.service.ts" />
+    <None Remove="ClientApp\src\app\servicers\error.interceptor.ts" />
+    <None Remove="ClientApp\src\app\servicers\product.service.ts" />
+>>>>>>> ad49b4b0c2207cbde6f0503cba0455cafbd7b9d2
   </ItemGroup>
 
   <ItemGroup>
@@ -45,9 +65,22 @@
   </ItemGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
     <TypeScriptCompile Include="ClientApp\src\app\models\orderPayment.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\resolvers\cart-details.resolvers.ts" />
     <TypeScriptCompile Include="ClientApp\src\app\servicers\payment.service.ts" />
+=======
+    <TypeScriptCompile Include="ClientApp\src\app\models\category.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\models\order.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\models\produts.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\models\customer.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\resolvers\category.resolvers.ts">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="ClientApp\src\app\resolvers\product-details.resolvers.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\servicers\error.interceptor.ts" />
+    <TypeScriptCompile Include="ClientApp\src\app\servicers\product.service.ts" />
+>>>>>>> ad49b4b0c2207cbde6f0503cba0455cafbd7b9d2
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

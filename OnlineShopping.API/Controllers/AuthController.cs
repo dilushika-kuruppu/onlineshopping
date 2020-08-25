@@ -27,7 +27,7 @@ namespace OnlineShoppingDB.API.Controllers
         private readonly IAuthBusiness _authBusiness;
         private readonly IConfiguration _config;
 
-        public AuthController(OnlineShoppingContext context,IAuthBusiness authBusiness, IConfiguration config)
+        public AuthController(OnlineShoppingContext context, IAuthBusiness authBusiness, IConfiguration config)
         {
             _context = context;
             _authBusiness = authBusiness;
@@ -54,25 +54,22 @@ namespace OnlineShoppingDB.API.Controllers
             return StatusCode(201);
 
         }
+ 
         [Route("login")]
         [HttpPost("login")]
         public async Task<IActionResult> Login(UserForLoginDto userForLoginDto)
-        {
+        {         
+                var userFormRepo = await _authBusiness.Login(userForLoginDto.UserName.ToLower(), userForLoginDto.Password,
+             _config.GetSection("AppSettings:Token").Value);
+                if (userFormRepo == null)
+                    return Unauthorized();
 
-          
-
-            var userFormRepo = await _authBusiness.Login(userForLoginDto.UserName.ToLower(), userForLoginDto.Password,
-              _config.GetSection("AppSettings:Token").Value);
-            if (userFormRepo == null)
-                return Unauthorized();
-
-            return Ok(new
-            {
-                token = userFormRepo.JWTToken
-            });
-
-
-        }
+                return Ok(new
+                {
+                    token = userFormRepo.JWTToken
+                });
+            }
+           
         // GET: api/Auth
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Login>>> GetLogin()

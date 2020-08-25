@@ -6,13 +6,20 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.0.0" />
+<<<<<<< HEAD
     <PackageReference Include="NETCore.MailKit" Version="2.0.3" />
+=======
+>>>>>>> ad49b4b0c2207cbde6f0503cba0455cafbd7b9d2
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.6.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\OnlineShopping.Common\OnlineShopping.Common.csproj" />
     <ProjectReference Include="..\OnlineShopping.Data\OnlineShopping.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="OnlineShopping\Business\" />
   </ItemGroup>
 
 </Project>

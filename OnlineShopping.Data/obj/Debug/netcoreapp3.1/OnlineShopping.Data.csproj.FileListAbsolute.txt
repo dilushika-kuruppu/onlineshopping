@@ -23,6 +23,7 @@ C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.Data\obj
 C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.Data\obj\Debug\netcoreapp3.1\OnlineShopping.Data.dll
 C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.Data\obj\Debug\netcoreapp3.1\OnlineShopping.Data.pdb
 C:\Users\User\source\repos\OnlineShopping\onlineshopping\OnlineShopping.Data\obj\Debug\netcoreapp3.1\OnlineShopping.Data.genruntimeconfig.cache
+<<<<<<< HEAD
 D:\Angular\OnlineShopping\onlineshopping\OnlineShopping.Data\bin\Debug\netcoreapp3.1\OnlineShopping.Data.deps.json
 D:\Angular\OnlineShopping\onlineshopping\OnlineShopping.Data\bin\Debug\netcoreapp3.1\OnlineShopping.Data.runtimeconfig.json
 D:\Angular\OnlineShopping\onlineshopping\OnlineShopping.Data\bin\Debug\netcoreapp3.1\OnlineShopping.Data.runtimeconfig.dev.json
@@ -38,3 +39,5 @@ D:\Angular\OnlineShopping\onlineshopping\OnlineShopping.Data\obj\Debug\netcoreap
 D:\Angular\OnlineShopping\onlineshopping\OnlineShopping.Data\obj\Debug\netcoreapp3.1\OnlineShopping.Data.dll
 D:\Angular\OnlineShopping\onlineshopping\OnlineShopping.Data\obj\Debug\netcoreapp3.1\OnlineShopping.Data.pdb
 D:\Angular\OnlineShopping\onlineshopping\OnlineShopping.Data\obj\Debug\netcoreapp3.1\OnlineShopping.Data.genruntimeconfig.cache
+=======
+>>>>>>> ad49b4b0c2207cbde6f0503cba0455cafbd7b9d2
